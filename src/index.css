@@ -13,6 +13,25 @@ body {
     padding: 0;
     margin: 0;
     background-color: #2C2C2C;
+    font-family: "Inter", sans-serif;
+}
+
+.page-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.component-wrap {
+    width: 80vw;
+}
+
+h1, h2, a {
+    font-family: "Limelight", sans-serif;
+}
+
+h2 {
+    font-size: 2.5rem;
 }
 
 /* header */
@@ -44,7 +63,6 @@ nav a {
     border-bottom: 4px solid #2C2C2C;
     border-top: 4px solid #2C2C2C;
     text-decoration: none;
-    font-family: "Limelight", sans-serif;
 }
 
 nav a:nth-child(1) {color: #ff7eb3;}
@@ -69,7 +87,6 @@ nav a:nth-child(6):hover {border-bottom: 4px solid #76b3ff;}
 }
 
 .home h1 {
-    font-family: "Limelight", sans-serif;
     font-size: 3rem;
     text-align: center;
     background: var(--gradient-colors);
@@ -85,3 +102,31 @@ nav a:nth-child(6):hover {border-bottom: 4px solid #76b3ff;}
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
+/* badge */
+.badge-page h2 {
+    color: #ff758c;
+}
+
+.badges-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.badge {
+    padding: 10px;
+    background-color: #F3F4F6;
+    color: #1F2937;
+    font-weight: bold;
+}
+
+.badge-round {border-radius: 20px;}
+.badge-red{background-color: #FEE2E2; color: #991B1B;}
+.badge-yellow{background-color: #FEF3C7; color: #92400E;}
+.badge-green{background-color: #D1FAE5; color: #065F46;}
+.badge-blue{background-color: #DBEAFE; color: #1E40AF;}
+.badge-indigo{background-color: #E0E7FF; color: #3730A3;}
+.badge-purple{background-color: #EDE9FE; color: #5B21B6;}
+.badge-pink{background-color: #FCE7F3; color: #9D174D;}

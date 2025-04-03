@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
 import Home from './Home';
-import Badges from './reusables/Badges';
-import Banners from './reusables/Banners';
-import Cards from './reusables/Cards';
-import Testimonials from './reusables/Testimonials';
-import Toasts from './reusables/Toasts';
-import Tooltips from './reusables/Tooltips';
+import Badges from './pages/Badges';
+import Banners from './pages/Banners';
+import Cards from './pages/Cards';
+import Testimonials from './pages/Testimonials';
+import Toasts from './pages/Toasts';
+import Tooltips from './pages/Tooltips';
 
 export default function App() {
     return (
