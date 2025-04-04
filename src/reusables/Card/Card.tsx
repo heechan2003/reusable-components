@@ -6,6 +6,7 @@ import CardText from "./CardText"
 
 interface CardProps {
     children?: ReactNode;
+    className?: string;
     title: string;
     description: string;
     icon?: ReactNode;
@@ -13,9 +14,10 @@ interface CardProps {
     backgroundColor?: string;
 }
 
-const Card:FC<CardProps> = ({children, title, description, icon, color, backgroundColor, ...rest}) => {
+const Card:FC<CardProps> = ({children, className, title, description, icon, color, backgroundColor, ...rest}) => {
     const cardClassName = clsx(
-        styles.card
+        styles.card,
+        className
     )
 
     return (
