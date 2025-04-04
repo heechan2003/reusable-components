@@ -11,17 +11,18 @@ export default function Badges() {
         <div className="page-wrap badge-page">
             <h2>Badges</h2>
             <div className="component-wrap badges-wrap">
-                <Badge className="badge one">
+                <Badge className="one">
                     Default
                 </Badge>
-                <Badge className="badge two" color="red">Red</Badge>
-                <Badge className="badge three" color="yellow">Yellow</Badge>
-                <Badge className="badge four" color="green" shape="round">Green</Badge>
-                <Badge className="badge five" color="blue" shape="round">Blue</Badge>
-                <Badge className="badge six" color="indigo" shape="round">Indigo</Badge>
-                <Badge className="badge seven" color="purple" shape="round">Purple</Badge>
+                <Badge className="two" color="red">Red</Badge>
+                <Badge className="three" color="yellow">Yellow</Badge>
+                <Badge className="four" color="green">Green</Badge>
+                <Badge className="five" color="blue" shape="round">Blue</Badge>
+                <Badge className="six" color="indigo" shape="round">Indigo</Badge>
+                <Badge className="seven" color="purple" shape="round">Purple</Badge>
+                <Badge className="eight" color="pink" shape="round">Pink</Badge>
                 <Badge 
-                    className="badge eight"
+                    className="nine"
                     onClick={handleOnClick}
                     style={{backgroundColor: `${clickBadgeColor}`, cursor: "pointer"}}
                 >

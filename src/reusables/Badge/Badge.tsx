@@ -1,24 +1,24 @@
-import { ReactNode, FC, HTMLAttributes } from "react";
+import { FC, HTMLAttributes } from "react";
 import clsx from "clsx";
 
-interface BadgeProps extends HTMLAttributes<HTMLDivElement> {
-    children: ReactNode;
+interface BadgeProps extends HTMLAttributes<HTMLButtonElement> {
     shape?: string;
-    color?: string;
+    color?: "red" | "yellow" | "green" | "blue" | "indigo" | "purple" | "pink";
     className?: string;
 }
 
 const Badge: FC<BadgeProps> = ({ children, className, shape, color, ...rest }) => {
     const badgeClassName = clsx(
-        className,
+        "badge",
         shape && `badge-${shape}`,
-        color && `badge-${color}`
+        color && `badge-${color}`,
+        className
     );
 
     return (
-        <div className={badgeClassName} {...rest}>
+        <button className={badgeClassName} {...rest}>
             {children}
-        </div>
+        </button>
     );
 }
 
