@@ -1,16 +1,18 @@
 import { useState, ReactNode, FC } from "react";
 import clsx from "clsx";
+import styles from "./Banner.module.css"
 import BannerButton from "./BannerButton";
 import BannerDropdown from "./BannerDropdown";
 
 interface BannerProps {
-    children: ReactNode;
+    children?: ReactNode;
     status: "success" | "warning" | "error" | "info";
     className?: string;
     title: string;
+    description: string;
 }
 
-const Banner: FC<BannerProps> = ({ children, status, className, title, ...rest}) => {
+const Banner: FC<BannerProps> = ({ children, description, status, className, title, ...rest}) => {
     const [isOpen, setIsOpen] = useState(false);
 
     function toggle() {
@@ -18,7 +20,7 @@ const Banner: FC<BannerProps> = ({ children, status, className, title, ...rest})
     }
 
     const bannerClassName = clsx(
-        "banner",
+        styles.banner,
         `banner-${status}`,
         className
     )
@@ -32,9 +34,10 @@ const Banner: FC<BannerProps> = ({ children, status, className, title, ...rest})
                 title={title}
             />
             {isOpen ? 
-                <BannerDropdown status={status}>{children}</BannerDropdown>
+                <BannerDropdown status={status}>{description}</BannerDropdown>
                 : null
             }
+            {children}
         </div>
     )
 }

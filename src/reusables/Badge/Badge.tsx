@@ -1,17 +1,18 @@
 import { FC, HTMLAttributes } from "react";
 import clsx from "clsx";
+import styles from "./Badge.module.css"
 
 interface BadgeProps extends HTMLAttributes<HTMLButtonElement> {
-    shape?: string;
+    shape?: "round" | "square";
     color?: "red" | "yellow" | "green" | "blue" | "indigo" | "purple" | "pink";
     className?: string;
 }
 
-const Badge: FC<BadgeProps> = ({ children, className, shape, color, ...rest }) => {
+const Badge: FC<BadgeProps> = ({ children, shape, color, className, ...rest }) => {
     const badgeClassName = clsx(
-        "badge",
-        shape && `badge-${shape}`,
-        color && `badge-${color}`,
+        styles.badge,
+        shape && styles[shape],
+        color && styles[color],
         className
     );
 

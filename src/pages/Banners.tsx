@@ -9,29 +9,29 @@ export default function Banners() {
                 <Banner 
                     status="success" 
                     title="Congratulations"
+                    description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, voluptatibus?"
                 >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, voluptatibus?
                 </Banner>
                 <h3>Warning</h3>
                 <Banner 
                     status="warning" 
                     title="Attention"
+                    description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, voluptatibus?"
                 >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, voluptatibus?
                 </Banner>
                 <h3>Error</h3>
                 <Banner
                     status="error" 
                     title="There is a problem with your application"
+                    description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, voluptatibus?"
                 >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, voluptatibus?
                 </Banner>
                 <h3>Info</h3>
                 <Banner 
                     status="info" 
                     title="Update Available"
+                    description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, voluptatibus?"
                 >
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, voluptatibus?
                 </Banner>
             </div>
         </div>

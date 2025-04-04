@@ -1,4 +1,5 @@
 import { FC } from "react"
+import styles from "./Banner.module.css"
 
 interface BannerButtonProps {
     status: "success" | "warning" | "error" | "info";
@@ -14,7 +15,7 @@ const BannerButton:FC<BannerButtonProps> = ({ status, isOpen, toggle, title}) =>
 
     return (
         <button
-            className={`banner-button banner-button-${status}`}
+            className={`${styles.bannerButton} ${styles[status]}`}
             aria-expanded={isOpen}
             onClick={toggle}
             style={isOpen ? openStyle : undefined}

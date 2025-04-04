@@ -1,0 +1,45 @@
+.banner {
+    width: 90%;
+    max-width: 550px;
+    height: 80px;
+}
+
+.bannerButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 40px;
+    padding-inline: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.bannerDropdown {
+    display: flex;
+    padding-inline: 30px 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-radius: 0 0 5px 5px;
+    font-size: 0.87rem;
+}
+
+.success {
+    color: #065F46;
+    background-color: #ECFDF5;
+}
+
+.warning {
+    color: #B45309;
+    background-color: #FFFBEB;
+}
+
+.error {
+    color: #92400E;
+    background-color: #FEF2F2;
+}
+
+.info {
+    color: #1E40AF;
+    background-color: #EFF6FF;
+}
