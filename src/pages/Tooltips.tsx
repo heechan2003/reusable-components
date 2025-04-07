@@ -28,7 +28,7 @@ export default function Tooltips() {
             <div className="component-wrap tooltips-wrap">
                 {areAllClosed() && (
                     <button 
-                        className="show-button"
+                        className="tooltip-show"
                         onClick={showAll}
                     >
                         <u>Show All</u>

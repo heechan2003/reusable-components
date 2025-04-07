@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Layout from './components/Layout';
-import Home from './Home';
+import Home from './pages/Home';
 import Badges from './pages/Badges';
 import Banners from './pages/Banners';
 import Cards from './pages/Cards';

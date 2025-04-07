@@ -1,0 +1,53 @@
+@keyframes toastFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px) scale(0.95);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.toast {
+    display: flex;
+    position: fixed;
+    width: 385px;
+    z-index: 1000;
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 1rem;
+    border: none;
+    gap: 0.8rem;
+    padding: 1rem;
+    box-shadow: 0 0.3rem 0.4rem #0000000D;
+    animation: toastFadeIn 0.3s ease-out;
+}
+
+.toastText {
+    text-align: left;
+}
+
+.toastText h4 {
+    font-weight: bold;
+}
+
+.success {
+    color: #065F46;
+    background-color: #ECFDF5;
+}
+
+.warning {
+    color: #B45309;
+    background-color: #FFFBEB;
+}
+
+.error {
+    color: #92400E;
+    background-color: #FEF2F2;
+}
+
+.info {
+    color: #1E40AF;
+    background-color: #EFF6FF;
+}
