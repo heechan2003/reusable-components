@@ -1,0 +1,113 @@
+.testimonial {
+    display: flex;
+    max-width: 1350px;
+}
+
+.testimonialText {
+    width: 55%;
+}
+
+.description {
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.personName {
+    font-weight: bold;
+}
+
+/* hasImage */
+.hasImage {
+    align-items: center;
+    height: 360px;
+    gap: 50px;
+    padding: 60px;
+    background-color: #2545B8;
+    color: white;
+}
+
+.hasImage > img {
+    height: 400px;
+    width: 320px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px;
+}
+
+.hasImageText img {
+    width: 45px;
+    height: 35px;
+}
+
+/* noImage */
+.noImage {
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    gap: 20px;
+    background-color: #F9FAFB;
+    background-image: url(./assets/DotPattern.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 240px 280px;
+    text-align: center;
+}
+
+.slash {
+    font-weight: bold;
+    color: #2E59F3;
+}
+
+.noImageText .personTitle {
+    color: #6B7280;
+}
+
+/** responsive **/
+@media (max-width: 768px) {
+    /* hasImage */
+    .hasImage {
+        flex-flow: column;
+        align-items: center;
+        position: relative;
+        padding: 0 10px 60px;
+        height: auto;
+    }
+
+    .hasImage::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        background-color: white;
+    }
+
+    .hasImage > img {
+        height: 200px;
+        width: 370px;
+        object-fit: cover;
+        object-position: 50% 20%;
+        z-index: 1;
+        border-radius: 15px;
+    }
+
+    /*  noImage */
+    .noImage {
+        padding-block: 60px;
+        text-align: left;
+        background-size: 45% 140px;
+    }
+
+    .testimonialText {
+        width: 85%;
+    }
+
+    .slash {
+        display: none;
+    }
+
+    .personTitle {
+        display: block;
+        line-height: 2;
+    }
+}

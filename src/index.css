@@ -24,6 +24,7 @@ body {
 
 .component-wrap {
     width: 80vw;
+    margin-block: 60px;
 }
 
 h1, h2, h3, a {
@@ -126,6 +127,10 @@ nav a:nth-child(6):hover {border-bottom: 4px solid #76b3ff;}
     align-items: center;
 }
 
+.banner {
+    margin-bottom: 30px;
+}
+
 .banners-wrap h3:nth-of-type(1) {color: #D1FAE5;}
 .banners-wrap h3:nth-of-type(2) {color: #FEF3C7;}
 .banners-wrap h3:nth-of-type(3) {color: #FEE2E2;}
@@ -140,6 +145,44 @@ nav a:nth-child(6):hover {border-bottom: 4px solid #76b3ff;}
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin-top: 40px;
     gap: 100px;
+}
+
+/* testimonials */
+.testimonial-page h2 {
+    color: #ffdf6e;
+}
+
+.testimonials-wrap {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 70px;
+    margin: 60px;
+}
+
+/* Tooltips */
+.tooltip-page h2 {
+    color: #8be8cb;
+}
+
+.tooltips-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.show-button {
+    color: #8be8cb;
+    font-family: "Permanent Marker", "cursive";
+    font-size: 1.25rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transition: 0.4s ease;
+}
+
+.show-button:hover {
+    font-size: 1.5rem;
 }

@@ -1,5 +1,6 @@
 import { FC, ReactNode } from "react"
 import clsx from "clsx"
+import logo from "./assets/Logo.png"
 import styles from "./Testimonial.module.css"
 import TestimonialText from "./TestimonialText"
 
@@ -15,14 +16,15 @@ interface TestimonialProps {
 const Testimonial:FC<TestimonialProps> = ({children, className, imageUrl, description, personName, personTitle, ...rest}) => {
     const testimonialClassName = clsx(
         className,
+        styles.testimonial,
         imageUrl ? styles.hasImage : styles.noImage,
     )
 
     return (
         <div className={testimonialClassName} {...rest}>
             {imageUrl ? 
-                <img className="testimoial-image" src={imageUrl} alt="image"/> 
-                : <i className="fas fa-home"></i>
+                <img src={imageUrl} alt="image"/> 
+                : <img src={logo} alt="logo" />
             }
             <TestimonialText 
                 hasImage={imageUrl ? true : false}

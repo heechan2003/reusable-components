@@ -6,14 +6,16 @@ export default function Banners() {
             <h2>Banners</h2>
             <div className="component-wrap banners-wrap">
                 <h3>Success</h3>
-                <Banner 
+                <Banner
+                    className="banner"
                     status="success" 
                     title="Congratulations"
                     description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, voluptatibus?"
                 >
                 </Banner>
                 <h3>Warning</h3>
-                <Banner 
+                <Banner
+                    className="banner"
                     status="warning" 
                     title="Attention"
                     description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, voluptatibus?"
@@ -21,13 +23,15 @@ export default function Banners() {
                 </Banner>
                 <h3>Error</h3>
                 <Banner
+                    className="banner"
                     status="error" 
                     title="There is a problem with your application"
                     description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, voluptatibus?"
                 >
                 </Banner>
                 <h3>Info</h3>
-                <Banner 
+                <Banner
+                    className="banner"
                     status="info" 
                     title="Update Available"
                     description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, voluptatibus?"

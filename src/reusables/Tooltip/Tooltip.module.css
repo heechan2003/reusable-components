@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.tooltip {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 385px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: white;
+    color: #111827;
+}
+
+.tooltipPointer {
+    position: absolute;
+    bottom: -19px;
+    left: 20%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 17px solid transparent;
+    border-right: 17px solid transparent;
+    border-top: 19px solid white;
+}
+
+i {
+    font-size: 1.25rem;
+}
+
+.tooltipText {
+    width: 75%;
+    font-size: 14px;
+}
+
+h4 {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+p {
+    font-weight: 400;
+}
+
+.tooltip .closeButton {
+    background: none;
+    border: none;
+    align-self: flex-start;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* theme and color */
+/* bold */
+.bold {background-color: #262626; color: white;}
+.pointer-bold{border-top: 19px solid #262626;}
+.bold.green{background-color: #47AA5D; color: #E3FFE9;}
+.pointer-bold.pointer-green {border-top: 19px solid #47AA5D;}
+.bold.pink{background-color: #A9229B; color: #D8D8D8;}
+.pointer-bold.pointer-pink {border-top: 19px solid #A9229B;}
+.bold.blue{background-color: #1E40AF; color: #D8D8D8;}
+.pointer-bold.pointer-blue {border-top: 19px solid #1E40AF;}
+
+/* light */
+.light.pink {background-color: #FFF3FC; color: #C7369E;}
+.pointer-light.pointer-pink {border-top: 19px solid #FFF3FC;}
+.light.blue {background-color: #E0E7FF; color: #1C51B9;}
+.pointer-light.pointer-blue {border-top: 19px solid #E0E7FF;}
+.light.green {background-color: #E7FFF3; color: #3C8C4E;}
+.pointer-light.pointer-green {border-top: 19px solid #E7FFF3;}
+
+/* box shadow */
+.tooltip.light {
+    box-shadow: 0 10px 15px #0000001A;
+}
