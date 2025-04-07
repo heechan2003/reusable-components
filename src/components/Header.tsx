@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 import clsx from "clsx";
 
 export default function Header() {
-    const [showNav, setShowNav] = useState(true);
+    const [showNav, setShowNav] = useState(false);
     const [hoveredLink, setHoveredLink] = useState<string | null>(null);
 
     const navRef = useRef<HTMLDivElement | null>(null);
