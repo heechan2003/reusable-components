@@ -73,6 +73,7 @@ nav a {
     background-size: var(--gradient-size);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    cursor: pointer;
     animation: var(--gradient-animation);
 }
 
